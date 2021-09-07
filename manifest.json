@@ -1,0 +1,11 @@
+{
+  "name": "WebGL Demo New Tab",
+  "version": "1.0",
+  "description": "Replaces the new tab with Henrik Rydgård's WebGL demo from WebGLsamples.org",
+  "manifest_version": 2,
+  "chrome_url_overrides" : {
+    "newtab": "aflower.html"
+  },
+  "icons": {
+          "140": "getwebgl.png" }
+}
