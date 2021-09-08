@@ -89,8 +89,8 @@ function FlowerEffect() {
     gl.blendFunc(gl.ONE, gl.ONE);
     var boom = 0.0 //0.5 + Math.sin(time)*0.5
     var uniformsConst = {
-      //extension is * 0.5
-      u_time: time * 0.24,
+      //extension is * 0.25
+      u_time: time * 0.25,
       //u_color: hsv2rgb((time * 0.1) % 1.0, 0.8, 0.1, 1),
       u_color: hsv2rgb((time * 0.025) % 1.0, 0.8, 0.1, 1),
       //u_color2: hsv2rgb((time * 0.22124) % 1.0, 0.7, 0.1, 0),
