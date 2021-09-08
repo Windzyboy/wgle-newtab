@@ -73,9 +73,7 @@ function FlowerEffect() {
 
   this.render = function(framebuffer, time, postproc) {
     m4.perspective(proj, tdl.math.degToRad(60), aspect, 0.1, 500);
-    //Original speed
-    //m4.rotationY(world, time*0.2)
-    m4.rotationY(world, time*0.05)
+    m4.rotationY(world, time*0.2)
     m4.mul(viewproj, view, proj)
     m4.mul(worldviewproj, world, viewproj)
 
@@ -91,9 +89,13 @@ function FlowerEffect() {
     gl.blendFunc(gl.ONE, gl.ONE);
     var boom = 0.0 //0.5 + Math.sin(time)*0.5
     var uniformsConst = {
-      u_time: time,
-      u_color: hsv2rgb((time * 0.1) % 1.0, 0.8, 0.1, 1),
-      u_color2: hsv2rgb((time * 0.22124) % 1.0, 0.7, 0.1, 0),
+      //extension is * 0.5
+      u_time: time * 0.24,
+      //u_color: hsv2rgb((time * 0.1) % 1.0, 0.8, 0.1, 1),
+      u_color: hsv2rgb((time * 0.025) % 1.0, 0.8, 0.1, 1),
+      //u_color2: hsv2rgb((time * 0.22124) % 1.0, 0.7, 0.1, 0),
+      u_color2: hsv2rgb((time * 0.05531) % 1.0, 0.7, 0.1, 0),
+
     }
     var uniformsPer = {
       u_worldviewproj: worldviewproj
