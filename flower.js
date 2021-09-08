@@ -73,13 +73,16 @@ function FlowerEffect() {
 
   this.render = function(framebuffer, time, postproc) {
     m4.perspective(proj, tdl.math.degToRad(60), aspect, 0.1, 500);
-    m4.rotationY(world, time*0.2)
+    //Original speed
+    //m4.rotationY(world, time*0.2)
+    m4.rotationY(world, time*0.05)
     m4.mul(viewproj, view, proj)
     m4.mul(worldviewproj, world, viewproj)
 
     if (postproc != 0) post.begin()
-    //THIS IS THE BACKGROUND CoLOR
+    //THIS IS THE ORIGINAL BACKGROUND CoLOR
     //gl.clearColor(0.1, 0.2, 0.3, 1)
+    //THIS IS THE EXTENSION BACKGROUND COLOR
     gl.clearColor(0, 0, 0, 0);
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
     gl.disable(gl.CULL_FACE);
