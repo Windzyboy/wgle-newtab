@@ -4,7 +4,7 @@
   "description": "Replaces the new tab with Henrik Rydgård's WebGL demo from WebGLsamples.org",
   "manifest_version": 2,
   "chrome_url_overrides" : {
-    "newtab": "aflower.html"
+    "newtab": "index.html"
   },
   "icons": {
           "140": "getwebgl.png" }
