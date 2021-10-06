@@ -4,4 +4,4 @@ https://webglsamples.org/electricflower/electricflower.html
 
 https://webglsamples.org/
 
-You can view a preview of the New Tab by viewing the GitHub Pages deployment, or by going to https://windzyboy.github.io/wgle.
+You can view a preview of the New Tab page by viewing the GitHub Pages deployment, or by going to https://windzyboy.github.io/wgle.
