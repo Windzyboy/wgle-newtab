@@ -60,7 +60,20 @@ html, body {
 }
 canvas {
   background-color: black;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+  
 #viewContainer {
   background-color: black;
   width: 100%;
